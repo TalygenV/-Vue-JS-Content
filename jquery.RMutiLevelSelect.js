@@ -1,5 +1,6 @@
 ﻿(function ($) {
     $.fn.RMultiLevelSelect = function (options) {
+        debugger;
         var opts = $.extend({}, $.fn.RMultiLevelSelect.defaults, options);
         var $appendTo = $(opts.chartElement);
         $this = $(this);
@@ -28,7 +29,7 @@
         $(opts.chartElement).addClass("locationddl_designfix");
     }
     function BulidTreeView(data, $appendTo, opts) {
-
+debugger;
         $appendTo.empty();
       var $mainul = $("<ul>").attr("id", opts.id).addClass("dropdown-menu");
         var returnedData = $.grep(data, function (element, index) {
